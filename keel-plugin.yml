@@ -6,7 +6,7 @@ title: "Database"
 version: 0.0.0
 publisher: keel
 summary: "Connect a database. You see its tables and an ER diagram. Agents get read-only SQL tools."
-repo: https://github.com/MiladNalbandi/keel-plugin-db
+repo: https://github.com/keel-studio/keel-plugin-db
 license: MIT
 
 requires:
