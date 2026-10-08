@@ -1,0 +1,24 @@
+# The plugin's manifest. Draft: the code still lives in keel-v2, so nothing is released yet.
+# Format: https://github.com/MiladNalbandi/keel-v2/tree/main/docs/plugins/02-plugin-package.md
+schema: 1
+name: db
+title: "Database"
+version: 0.0.0
+publisher: keel
+summary: "Connect a database. You see its tables and an ER diagram. Agents get read-only SQL tools."
+repo: https://github.com/MiladNalbandi/keel-plugin-db
+license: MIT
+
+requires:
+  sdk: 1
+  plugins:
+    code: ">=0.1.0"
+optional:
+  map: ">=0.1.0"
+
+parts:
+  engine: { path: engine, package: keel_plugin_db }
+  api: { jars: [api/keel-plugin-db.jar] }
+  web: { entry: web/index.js }
+  content: content
+  migrations: migrations
